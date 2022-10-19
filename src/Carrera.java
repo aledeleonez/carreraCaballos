@@ -84,8 +84,8 @@ public class Carrera {
                     pbCaballo3.setValue((Integer) event.getNewValue());
                 }
                 if(event.getPropertyName().equals("ganador")){
-                    caballo2.cancel(true);
                     caballo1.cancel(true);
+                    caballo2.cancel(true);
                     caballo4.cancel(true);
                     caballo5.cancel(true);
                     caballo6.cancel(true);
@@ -101,9 +101,9 @@ public class Carrera {
                     pbCaballo4.setValue((Integer) event.getNewValue());
                 }
                 if(event.getPropertyName().equals("ganador")){
+                    caballo1.cancel(true);
                     caballo2.cancel(true);
                     caballo3.cancel(true);
-                    caballo1.cancel(true);
                     caballo5.cancel(true);
                     caballo6.cancel(true);
                     caballo7.cancel(true);
@@ -118,10 +118,10 @@ public class Carrera {
                     pbCaballo5.setValue((Integer) event.getNewValue());
                 }
                 if(event.getPropertyName().equals("ganador")){
+                    caballo1.cancel(true);
                     caballo2.cancel(true);
                     caballo3.cancel(true);
                     caballo4.cancel(true);
-                    caballo1.cancel(true);
                     caballo6.cancel(true);
                     caballo7.cancel(true);
                     caballo8.cancel(true);
@@ -135,11 +135,11 @@ public class Carrera {
                     pbCaballo6.setValue((Integer) event.getNewValue());
                 }
                 if(event.getPropertyName().equals("ganador")){
+                    caballo1.cancel(true);
                     caballo2.cancel(true);
                     caballo3.cancel(true);
                     caballo4.cancel(true);
                     caballo5.cancel(true);
-                    caballo1.cancel(true);
                     caballo7.cancel(true);
                     caballo8.cancel(true);
                 }
@@ -152,12 +152,12 @@ public class Carrera {
                     pbCaballo7.setValue((Integer) event.getNewValue());
                 }
                 if(event.getPropertyName().equals("ganador")){
+                    caballo1.cancel(true);
                     caballo2.cancel(true);
                     caballo3.cancel(true);
                     caballo4.cancel(true);
                     caballo5.cancel(true);
                     caballo6.cancel(true);
-                    caballo1.cancel(true);
                     caballo8.cancel(true);
                 }
             }
@@ -169,13 +169,13 @@ public class Carrera {
                     pbCaballo8.setValue((Integer) event.getNewValue());
                 }
                 if(event.getPropertyName().equals("ganador")){
+                    caballo1.cancel(true);
                     caballo2.cancel(true);
                     caballo3.cancel(true);
                     caballo4.cancel(true);
                     caballo5.cancel(true);
                     caballo6.cancel(true);
                     caballo7.cancel(true);
-                    caballo1.cancel(true);
                 }
             }
         });
@@ -211,7 +211,7 @@ public class Carrera {
     private void initialize(){
         frameCarrera = new JFrame();
         frameCarrera.setTitle("Carrera de caballos");
-        frameCarrera.setBounds(100,100,450,300);
+        frameCarrera.setBounds(100,100,450,700);
         frameCarrera.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frameCarrera.getContentPane().setLayout(null);
         frameCarrera.getContentPane().add(getPbCaballo1());
@@ -400,7 +400,7 @@ public class Carrera {
     public JLabel getMarcador() {
         if (marcador == null) {
             marcador = new JLabel("");
-            marcador.setBounds(147, 241, 144, 14);
+            marcador.setBounds(147, 600, 144, 14);
         }
         return marcador;
     }
@@ -408,7 +408,7 @@ public class Carrera {
     public JLabel getProgresoCaballo1() {
         if (progresoCaballo1 == null) {
             progresoCaballo1 = new JLabel("");
-            progresoCaballo1.setBounds(65, 40, 60, 14);
+            progresoCaballo1.setBounds(75, 45, 60, 14);
         }
         return progresoCaballo1;
     }
